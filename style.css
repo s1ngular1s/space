@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 800;
+    src: url(fonts/Gilroy_ExtraBold.web/RT/RT/Gilroy/Gilroy_ExtraBold.css) format('css');
+}
+
+@font-face {
+    font-family: 'Golroy';
+    font-weight: 300;
+    src: url(fonts/Gilroy_Light.web/RT/RT/Gilroy/Gilroy_Light.css) format('css');
+}
+
+/* ______________________________main_styles______________________________ */
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    color: white;
+    background: #29094D;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1900px;
+    padding: 0 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+p {
+    color: white;
+}
+
+/* ______________________________header______________________________ */
+/* _____________________________container______________________________ */
+
+.header {
+    padding: 40px 0;
+    margin-bottom: 80px;
+    height: 100%;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container a + a {
+    margin-left: 20px;
+}
+
+/* ____________________________contacts______________________________ */
+
+.contacts img {
+    height: 40px;
+    width: 40px;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+
+#write {
+    margin-right: 6px;
+}
+
+/* ______________________________main______________________________ */
+/* ______________________________title______________________________ */
+
+.welcome {
+    font-size: 36px;
+    letter-spacing: 3px;
+    padding: 20px 0;
+    margin-right: 600px;
+    margin-bottom: 40px;
+}
+
+.about {
+    font-weight: 300;
+    padding: 20px 0;
+    margin-right: 800px;
+    margin-bottom: 20px;
+}
+
+/* ______________________________links______________________________ */
+
+.link {
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.l1 {
+    margin-right: 110px;
+}
+
+.l3 {
+    margin-right: 113px;
+}
+
+/* ______________________________background______________________________ */
+
+.background {
+    overflow: hidden;
+}
+
+.media {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.media video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ______________________________footer______________________________ */
+
+.footer {
+    padding: 20px 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer_container {
+    font-weight: 300;
+    text-align: right;
+}
+
+/* ______________________________adaptive______________________________ */
+
+@media (max-width: 1440px) {
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .welcome {
+        margin-right: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .about {
+        margin-right: 400px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    a {
+        font-size: 16px;
+    }
+    
+    .container {
+        padding: 0 40px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .header__container a + a {
+        margin-left: 10px;
+    }
+
+    .welcome {
+        font-size: 20px;
+        padding: 0;
+        margin-right: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .about {
+        font-size: 16px;
+        padding: 10px 0;
+        margin-right: 200px;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide {
+        display: none;
+    }
+    
+    .header {
+        margin-bottom: 0;
+    }
+
+    .welcome {
+        margin-right: 0;
+    }
+    
+    .about {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .contacts img {
+        margin-left: 10px;
+    }
+}
