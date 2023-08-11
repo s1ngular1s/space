@@ -11,6 +11,11 @@
 	box-sizing: border-box;
 }
 
+*::-webkit-media-controls-panel {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
 /* Links */
 
 a, a:link, a:visited  {
